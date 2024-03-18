@@ -4,12 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Styled Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #007bff; /* blue border */
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff; /* blue background */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* light gray background for even rows */
+        }
+
+        tr:hover {
+            background-color: #e2e2e2; /* slightly darker gray on hover */
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-
-        
-</body>
-</html>
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+                <th>Assists</th>
+                <th>Rebounds</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>LeBron James</td>
+                <td>25</td>
+                <td>10</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Kobe Bryant</td>
+                <td>30</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Michael Jordan</td>
+                <td>35</td>
+                <td>7</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Larry Bird</td>
+                <td>20</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Magic Johnson</td>
+                <td>22</td>
+                <td>12</td>
+         
